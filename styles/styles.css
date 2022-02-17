@@ -74,25 +74,30 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 38px;
+  margin-top: 2.4rem;
 }
 
 .container__card--text-content h1 {
   color: #1f2f56;
-  margin-bottom: 24px;
+  margin-bottom: 1.8rem;
   font-weight: 900;
+  font-size: 2.2rem;
+  padding-top: 4px;
 }
 
 .container__card--text-content p {
   color: #7280a7;
-  font-weight: 700;
-  font-size: 1.1rem;
-  line-height: 1.6rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  padding: 0 3rem;
+  line-height: 2.4rem;
+  margin-bottom: 2.5rem;
 }
 
 .container__card--pricing-content {
+  width: 100%;
   background-color: #f5f7ff;
-  margin: 28px auto 24px auto;
+  margin: 0 auto 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,33 +111,47 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 2rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  align-items: center;
   border-radius: 0.5rem;
   padding: 1.6rem;
   max-width: 276px;
   position: relative;
 }
 
+.container__card--pricing-content a {
+  cursor: pointer;
+  font-size: 1.28rem;
+  font-weight: 700;
+  color: #3829e0;
+  margin-right: -2rem;
+}
+
 .container__card--pricing-content a:hover {
   text-decoration: none;
+  color: #7280a7;
 }
 
 .container__card--pricing-content img {
-  margin-right: 3.5rem;
+  margin-left: -2rem;
 }
 
 .container__card--pricing-content .pricing__box {
   line-height: 2rem;
   position: relative;
-  right: 3.5rem;
+  right: 1.5rem;
 }
 
 .container__card--pricing-content .pricing__box--plan {
-  font-weight: 900;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #1f2f56;
 }
 
 .container__card--pricing-content .pricing__box--plan--price {
   color: #7280a7;
+  font-size: 1.4rem;
 }
 
 .btn__section {
@@ -150,23 +169,33 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 2rem;
+  margin: 2.4rem 0;
+}
+
+.btn__section--proceed {
+  -webkit-box-shadow: 0 1.6rem 1.6rem rgba(56, 41, 224, 0.25);
+          box-shadow: 0 1.6rem 1.6rem rgba(56, 41, 224, 0.25);
 }
 
 .btn__section--proceed, .btn__section--cancel {
   background-color: #3829e0;
-  padding: 2rem;
+  padding: 1.6rem 0;
   border-radius: 1rem;
   color: #fff;
-  width: 80%;
+  width: 85%;
   background-repeat: no-repeat;
   border: none;
   font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 0.05rem;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .transparent {
   background-color: transparent;
   color: #7280a7;
-  margin-bottom: 3.7rem;
+  margin-top: -1.2rem;
+  margin-bottom: 2rem;
 }
 
 button:hover {

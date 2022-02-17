@@ -33,52 +33,70 @@ body {
   text-align: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 38px;
+  margin-top: 2.4rem;
 
   & h1 {
     color: $Dark-blue;
-    margin-bottom: 24px;
+    margin-bottom: 1.8rem;
     font-weight: 900;
+    font-size: 2.2rem;
+    padding-top: 4px;
   }
 
   & p {
     color: $Desaturated-blue;
-    font-weight: 700;
-    font-size: 1.1rem;
-    line-height: 1.6rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding: 0 3rem;
+    line-height: 2.4rem;
+    margin-bottom: 2.5rem;
   }
 }
-//
 
 .container__card--pricing-content {
+  width: 100%;
   background-color: $Very-pale-blue;
-  margin: 28px auto 24px auto;
+  margin: 0 auto 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 2rem;
+  justify-content: space-around;
+  align-items: center;
   border-radius: 0.5rem;
   padding: 1.6rem;
   max-width: 276px;
   position: relative;
 
+  & a {
+    cursor: pointer;
+    font-size: 1.28rem;
+    font-weight: 700;
+    color: $Bright-blue;
+    margin-right: -2rem;
+  }
+
   & a:hover {
     text-decoration: none;
+    color: $Desaturated-blue;
   }
   & img {
-    margin-right: 3.5rem;
+    margin-left: -2rem;
   }
 
   & .pricing__box {
     line-height: 2rem;
     position: relative;
-    right: 3.5rem;
+    right: 1.5rem;
+
     &--plan {
-      font-weight: 900;
+      font-weight: 700;
+      font-size: 1.4rem;
+      color: $Dark-blue;
 
       &--price {
         color: $Desaturated-blue;
+        font-size: 1.4rem;
       }
     }
   }
@@ -90,24 +108,33 @@ body {
   justify-content: center;
   flex-direction: column;
   gap: 2rem;
+  margin: 2.4rem 0;
+
+  &--proceed {
+    box-shadow: 0 1.6rem 1.6rem hsla(245, 75%, 52%, 0.25);
+  }
 
   &--proceed,
   &--cancel {
     background-color: $Bright-blue;
-    padding: 2rem;
+    padding: 1.6rem 0;
     border-radius: 1rem;
     color: #fff;
-    width: 80%;
+    width: 85%;
     background-repeat: no-repeat;
     border: none;
     font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
+    font-family: "Red Hat Display", sans-serif;
   }
 }
 
 .transparent {
   background-color: transparent;
   color: $Desaturated-blue;
-  margin-bottom: 3.7rem;
+  margin-top: -1.2rem;
+  margin-bottom: 2rem;
 }
 
 button:hover {
