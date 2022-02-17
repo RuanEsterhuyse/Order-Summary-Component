@@ -1,0 +1,116 @@
+body {
+  background: url(/images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.container {
+  background-color: white;
+  border-radius: 2rem;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  margin: 7.1rem 2.4rem 7.1rem 2.4rem;
+
+  .container__card {
+    width: 100%;
+
+    .container__card--hero-image-wrapper {
+      width: 100%;
+      height: auto;
+
+      .container__card--hero-image {
+        width: 100%;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        height: auto;
+      }
+    }
+  }
+}
+
+.container__card--text-content {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 38px;
+
+  & h1 {
+    color: $Dark-blue;
+    margin-bottom: 24px;
+    font-weight: 900;
+  }
+
+  & p {
+    color: $Desaturated-blue;
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+}
+//
+
+.container__card--pricing-content {
+  background-color: $Very-pale-blue;
+  margin: 28px auto 24px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2rem;
+  border-radius: 0.5rem;
+  padding: 1.6rem;
+  max-width: 276px;
+  position: relative;
+
+  & a:hover {
+    text-decoration: none;
+  }
+  & img {
+    margin-right: 3.5rem;
+  }
+
+  & .pricing__box {
+    line-height: 2rem;
+    position: relative;
+    right: 3.5rem;
+    &--plan {
+      font-weight: 900;
+
+      &--price {
+        color: $Desaturated-blue;
+      }
+    }
+  }
+}
+
+.btn__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  &--proceed,
+  &--cancel {
+    background-color: $Bright-blue;
+    padding: 2rem;
+    border-radius: 1rem;
+    color: #fff;
+    width: 80%;
+    background-repeat: no-repeat;
+    border: none;
+    font-weight: 700;
+  }
+}
+
+.transparent {
+  background-color: transparent;
+  color: $Desaturated-blue;
+  margin-bottom: 3.7rem;
+}
+
+button:hover {
+  opacity: 0.9;
+  transition: ease;
+}
