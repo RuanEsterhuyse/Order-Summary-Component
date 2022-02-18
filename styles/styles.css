@@ -203,6 +203,30 @@ button:hover {
   transition: ease;
 }
 
+footer {
+  position: fixed;
+  width: 100%;
+  top: 95%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 1rem;
+  color: #1f2f56;
+  text-align: center;
+}
+
+footer a {
+  color: #3829e0;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-height: 718px) {
+  .attribution {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
   body {
     background: url("/images/pattern-background-desktop.svg");

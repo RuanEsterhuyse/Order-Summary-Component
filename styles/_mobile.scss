@@ -141,3 +141,26 @@ button:hover {
   opacity: 0.9;
   transition: ease;
 }
+
+footer {
+  position: fixed;
+  width: 100%;
+  top: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  color: hsl(223, 47%, 23%);
+  text-align: center;
+}
+
+footer a {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-height: 718px) {
+  .attribution {
+    display: none;
+  }
+}
