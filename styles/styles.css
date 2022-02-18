@@ -32,7 +32,7 @@ body {
 }
 
 body {
-  background: url(./images/pattern-background-mobile.svg);
+  background: url("./images/pattern-background-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-color: #e0e8ff;
