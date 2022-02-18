@@ -1,0 +1,70 @@
+@media (min-width: 768px) {
+  body {
+    background: url("/images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+  }
+
+  .container__card {
+    min-width: 45rem;
+  }
+
+  &--hero-image-wrapper {
+    width: 100%;
+  }
+
+  .container__card--pricing-content {
+    padding: 2.4rem 1rem;
+    width: 80%;
+  }
+
+  .container__card--text-content a,
+  p {
+    font-size: 1.36rem;
+  }
+
+  .container__card--text-content h1 {
+    font-size: 2.8rem;
+    margin-top: 2rem;
+  }
+
+  .container__card--text-content p {
+    padding: 0 7rem;
+  }
+
+  .container__card--pricing-content .pricing__box p {
+    font-size: 1.6rem;
+    position: relative;
+    left: -3rem;
+  }
+
+  .btn__section--proceed,
+  .btn__section--proceed--cancel,
+  .transparent {
+    width: 80%;
+    margin-top: 1rem;
+  }
+
+  .transparent {
+    margin-top: -0.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .change {
+    font-weight: 900;
+  }
+
+  #title {
+    font-size: 900;
+    margin-bottom: 0.5rem;
+  }
+}
+
+// {
+//   font-size: 59px;
+//
+
+//   &--price {
+//     background-color: aquamarine;
+//     font-size: 4rem;
